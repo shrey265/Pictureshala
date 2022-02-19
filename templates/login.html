@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+<div class="row my-5 p-4 shadow">
+    <div class="col-lg-6  p-3">
+        <h1>Login</h1>
+        <div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Username</label>
+              <input name='login_username' type="charset" class="form-control" id="login_username" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input name='login_password'type="password" class="form-control" id="login_password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" onclick=login()>Login</button>
+            <p class='mt-2'>
+            don't have an account <a href='/register'>register</a> 
+          </p>
+        </div>
+    </div>
+   <div class="col-lg-6"><img class="img-fluid img-responsive" src="static\aaron-burden-GVnUVP8cs1o-unsplash.jpg" alt="pictureshala"></div> 
+    
+</div>
+</div>
+{% endblock content %}

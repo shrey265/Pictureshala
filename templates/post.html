@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class='container'>
+<a href="{% url 'see_pics' %}" class="btn btn-warning mt-5"> See your pics </a>
+  <form method="POST" class="mt-3 pt-5 mb-5 pb5" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-md-12">
+        <label for="">Write the title of your picture</label>
+        <input type="text" class="form-control" placeholder="Enter Title" name="title">
+      </div>
+      <div class="col-md-12 mb-5 mt-5">
+        <label for="">Write a story for you picture</label>
+      <textarea id="story" class="form-control" name="story"></textarea>
+
+      </div>
+      <div class="col-md-12">
+        <input type="file" name="image" class="form-control">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+  </form>
+</div>
+
+
+{% endblock content %}
+
