@@ -3,7 +3,7 @@ A web application project for posting pictures. Django and RestFramework are use
 
 # Home Page
 
-![Home Page](https://github.com/shrey265/Pictureshala/blob/master/homepage.png?raw=true)
+![Home Page](https://github.com/shrey265/Pictureshala/blob/master/static/homepage.png?raw=true)
 
 # Login Page
 
